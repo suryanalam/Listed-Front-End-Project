@@ -1,0 +1,42 @@
+.dashboard-bg {
+	min-width: 80vw;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dashboard-div {
+	min-width: 80vw;
+	min-height: 98vh;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.db-inner-div {
+	min-width: 75vw;
+}
+
+.db-inner-div:nth-child(4) {
+	min-height: 32vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media screen and (max-width:426px){
+    .dashboard-div {
+        padding: 1rem;
+        gap:1rem;
+    } 
+
+    .db-inner-div:nth-child(4) {
+        gap:1rem;
+        justify-content: center;
+        min-width: 90vw;
+    }
+}
+

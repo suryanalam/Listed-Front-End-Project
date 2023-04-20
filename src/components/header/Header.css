@@ -1,0 +1,42 @@
+.db-inner-div:nth-child(1) {
+	min-height: 5vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.innerdiv1-profile-div {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.search-div {
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.search-div > input[type="search"] {
+	outline: 0;
+	border: none;
+	font-size: 8px;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background-color: black;
+}
+
+@media screen and (max-width:426px){
+	.db-inner-div:nth-child(1) {
+		min-width: 90vw;
+		justify-content: center;
+		gap:1rem;
+	}
+}

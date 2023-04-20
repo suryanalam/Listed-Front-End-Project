@@ -1,0 +1,13 @@
+.db-inner-div:nth-child(3) {
+	min-height: 35vh;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+}
+
+@media screen and (max-width:426px){
+	.db-inner-div:nth-child(3) {
+		min-width: 90vw;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,97 @@
+.sidebar-bg {
+	min-width: 20vw;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sidebar-div {
+	padding: 2rem;
+	min-width: 15vw;
+	min-height: 90vh;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.nav-bg {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.nav-title {
+	letter-spacing: 1px;
+	font-size: 2vw;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.nav-items-div {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.nav-item {
+	font-size: 1rem;
+	color: var(--white);
+	opacity: 0.8;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.active {
+	opacity: 1;
+	font-weight: 500;
+}
+
+.contact-div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar-div {
+        padding: 2rem 1.5rem;
+    }
+    .nav-item {
+        font-size: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+	.sidebar-bg {
+		min-width: 18vw;
+	}
+
+	.sidebar-div {
+		min-width: 13vw;
+		padding: 2rem 1rem;
+	}
+
+	.nav-item {
+		font-size: 0.25rem;
+	}
+
+	.nav-items-icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.sidebar-bg {
+		display: none;
+	}
+}

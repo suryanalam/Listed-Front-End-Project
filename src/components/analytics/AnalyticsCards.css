@@ -1,0 +1,15 @@
+.db-inner-div:nth-child(2) {
+	min-height: 12vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (max-width:426px){
+	.db-inner-div:nth-child(2) {
+		min-width: 90vw;
+		justify-content: center;
+		gap:1rem;
+	}
+}
